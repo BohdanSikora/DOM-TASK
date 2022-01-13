@@ -1,0 +1,6 @@
+h1 {
+    background: lightgreen;
+    font-weight: bold;
+    text-decoration: line-through;
+    display: none;
+}
