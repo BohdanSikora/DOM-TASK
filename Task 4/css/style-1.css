@@ -9,26 +9,65 @@ body {
     color: #333;
     line-height: 1.4;
 }
-main {
+#app {
     margin-top: 80px;
-    height: 100vh;
 }
-.container__main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+.main_container {
+	max-width: 1200px;
+	margin: 30px auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 20px;
 }
-.fan__zone {
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    line-height: 1.3;
-    font-weight: normal;
+.fan__massage h2 {
+    color: rgba(185, 16, 16, 1);
 }
-.fan__first {
-    padding-bottom: 20px;
+.comment {
+	display: block;
+	transition: all 1s;
 }
-.questens, 
-.intervier {
+
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 20px 20px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid rgba(185, 16, 16, 0.75);
+	transition: all 0.5s;
+	margin-top: 15px;
+}
+textarea:hover {
+    border: 2px solid rgba(185, 16, 16, 0.75);
+}
+button.send__massage {
+	background: rgba(185, 16, 16, 1);
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.send__massage:hover {
+	background: #9201A8;
+}
+
+
+/* .intervier {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 10px;
@@ -36,7 +75,7 @@ main {
     animation-duration: 3s;  
     animation-delay: 2s;
     animation-fill-mode: backwards;
-}
+} */
 @keyframes wow {
     from {top: 0px; background-color: yellow;}
     to {top: 200px;}
@@ -66,22 +105,8 @@ main {
     border:rgba(185, 16, 16, 1) 2px solid;
     margin-bottom: 15px;
 }
-.latters__fan {
-    float: right;
-}
-#myInput {
-    width: 300px;
-    height: 6rem;
-}
-#myBtn {
-    width: 100px;
-    height: 40px;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    background: rgb(207, 137, 137);
-}
+
+
 .logo {
     animation: animate 1s ease-in-out forwards;
 }
